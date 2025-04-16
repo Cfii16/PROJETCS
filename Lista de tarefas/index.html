@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt"> <!-- define a linguagem -->
+<head>
+    <meta charset="UTF-8"> <!-- Faz o site suportar letras como ç e acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- faz o site ajustar-se ao tamanho de ecra -->
+    <title>Lista de Tarefas</title> <!-- aparece o título na página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Faz a ligação do arquivo CSS à página para deixar bonito segundo as regras -->
+</head>
+<body>
+    <div class="container"> <!-- cria caixa invisível para o conteúdo -->
+        <h1>Lista de Tarefas</h1>
+        <div class="input-container"> <!-- outra caixa invisível para separar o texto, o CSS estiliza isso separadamente -->
+            <input type="text" id="taskInput" placeholder="Escreve uma tarefa..."> <!-- cria um campo para texto -->
+            <button onclick="addTask()">Adicionar</button> <!-- botão chama a função addTask() -->
+        </div><!-- fecha o input container -->
+	<button onclick="clearAll()" class = "clear-button">Limpar Tudo</button>
+        <ul id="taskList"></ul> <!-- Cria uma lista vazia -->
+    </div> <!-- fecha a caixa do container -->
+    <script src="script.js"></script> <!-- conecta o arquivo script.js à página -->
+</body>
+</html>
